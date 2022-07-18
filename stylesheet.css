@@ -104,7 +104,7 @@ body {
   text-align: center;
   padding: 4px 30px 4px 30px;
   margin: 10px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 17px;
   color: #b68b00;
   border-radius: 50px;
@@ -128,14 +128,22 @@ body {
   border-radius: 50px;
   transform: translateX(-5px);
 }
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
+
 .chngh2 {
   color: #ffffff;
   font-weight: 800;
   text-shadow: #383737 3px 5px 2px;
+}
+
+a {
+  color: none !important;
+  text-decoration: none !important;
+  background-color: transparent;
 }
 
 /*----------------------------- Nav Section End-------------------------------*/
@@ -148,6 +156,7 @@ body {
   margin: 60px 50px;
   background-color: #34343470;
 }
+
 .content-box {
   height: 350px;
   padding: 0 40px;
@@ -155,6 +164,7 @@ body {
   margin: auto;
   display: flex;
 }
+
 .content-info {
   width: 50%;
   padding: 30px;
@@ -171,6 +181,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 .content-img {
   width: 50%;
   flex-basis: 50%;
@@ -178,6 +189,7 @@ body {
   overflow: hidden;
   position: relative;
 }
+
 .content-img:after {
   content: '';
   position: absolute;
@@ -190,17 +202,21 @@ body {
   /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
   opacity: .7;
 }
+
 .content-img img {
   transition: .3s ease transform;
 }
+
 .content-box:hover .content-img img {
   transform: scale(1.1);
 }
+
 .content-heading {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
 }
+
 button,
 .content-btn {
   padding: 1.3em 3em;
@@ -217,30 +233,37 @@ button,
   cursor: pointer;
   outline: none;
 }
+
 .content-btn:hover {
   background-color: #b68b00;
   box-shadow: 0px 15px 20px #484439;
   color: black;
   transform: translateY(-7px);
 }
+
 .content-btn:active {
   transform: translateY(-1px);
 }
+
 button a {
   text-decoration: none;
   color: #b68b00;
 }
+
 button a:hover {
   text-decoration: none;
   color: #222222;
 }
+
 #more {
   display: none;
 }
+
 .about-para {
   font-size: 24px;
   font-weight: 400;
 }
+
 .about-btn {
   padding: 10px;
   font-size: 14px;
@@ -257,19 +280,23 @@ button a:hover {
   font-size: 35px;
   margin: 20px;
 }
+
 .myModal {
   min-width: 60% !important;
 
 }
+
 .modal-content {
   background-color: #000000 !important;
   outline: none !important;
   background-image: linear-gradient(0deg, #222222 0%, #81692473 100%);
 }
+
 .card {
   border: none !important;
   margin: 10px !important;
 }
+
 .card-body {
   min-height: 1px;
   padding: 1.25rem;
@@ -279,6 +306,7 @@ button a:hover {
   background-image: linear-gradient(84deg, #504308 0%, #040404de 100%);
   color: white;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -286,6 +314,7 @@ button a:hover {
   flex-wrap: wrap;
 
 }
+
 .sofa-container,
 .bedroom-container {
   text-align: center;
@@ -296,6 +325,7 @@ button a:hover {
   margin-bottom: 60px;
 
 }
+
 .sofa-gallery,
 .bed-gallery {
   padding: 90PX 0;
@@ -303,12 +333,15 @@ button a:hover {
   border: 2px solid #a18400;
   background-color: #34343470;
 }
+
 .modal-heading {
   color: white;
 }
+
 .fa-cart-arrow-down {
   font-size: 24px;
 }
+
 .border-container {
   border: 1px solid #d39e00;
   padding: 40px 30px !important;
@@ -324,25 +357,38 @@ button a:hover {
   font-size: larger;
   letter-spacing: 8px;
 }
+
 .contact-heading {
   font-family: aAutoSignature, sans-serif !important;
   font-size: 70px;
 }
-.contact-cont {
-  padding: 90px 95px;
+
+.contact-main {
+  border: 1px solid magenta;
+  display: flex;
   margin: 40px 20px;
   border: 2px solid #a18400;
 }
+
+.contact-cont {
+  padding: 90px 50px;
+  /* margin: 40px 20px; */
+  /* border: 2px solid #a18400; */
+  width: 50%;
+}
+
 form {
   padding: 10px;
   width: 90%;
   margin: auto;
 }
+
 .form-heading {
   margin: 10px;
   font-size: 24px;
   color: white;
 }
+
 input {
   padding: 15px;
   width: 100%;
@@ -352,15 +398,26 @@ input {
   color: white;
   outline: none !important;
 }
+
 button {
   border: none;
 }
+
 textarea {
   background-color: #222222;
-  width: 60%;
+  width: 100%;
   border: 1px solid #d39e00;
   padding: 20px;
   outline: none;
+}
+
+.map-section {
+  width: 40% !important;
+  padding: 185px 30px;
+}
+
+#contact-btn {
+  margin: 16px 5px;
 }
 
 /*----------------------------- Contact Section End -------------------------------*/
@@ -373,33 +430,40 @@ textarea {
   margin: 20px 0;
   color: #ababab;
 }
+
 .lists li {
   list-style: none;
   color: grey;
   font-size: small;
 }
+
 .backg {
   background-color: #2c251175;
   color: white;
 }
+
 .fa-facebook,
 .fa-youtube,
 .fa-instagram {
   font-size: 24px;
   margin: 4px 6px 4px 2px;
 }
+
 .fa-facebook:hover,
 .fa-youtube:hover,
 .fa-instagram:hover {
   color: #a68001;
 }
+
 .lists li {
   transition: transform 0.8s;
 }
+
 .lists li:hover {
   transform: scale(1.2);
   color: #a18400;
 }
+
 /*----------------------------- Footer Section End -------------------------------*/
 
 /*----------------------------- @Media Query -------------------------------*/
@@ -438,7 +502,7 @@ textarea {
 
   .content-heading {
     font-size: 23px;
-  } 
+  }
 
   button,
   .content-btn {
@@ -474,7 +538,7 @@ textarea {
     width: 80% !important;
     height: 98% !important;
     margin: auto !important;
-  } 
+  }
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -493,5 +557,40 @@ textarea {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .contact-main {
+    display: block;
+
+  }
+
+  .contact-cont {
+    padding: 30px 15px;
+    width: 100%;
+  }
+
+  .form-inline {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    width: 100%;
+  }
+
+  .form-heading {
+    margin: 10px;
+    font-size: 18px;
+  }
+
+  textarea {
+    height: 100px;
+
+  }
+
+  .map-section {
+    width: 100% !important;
+    padding: 30px 20px;
   }
 }
